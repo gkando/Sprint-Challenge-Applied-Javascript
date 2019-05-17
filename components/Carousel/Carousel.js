@@ -40,6 +40,7 @@ class Carousel {
                 carousel.current  = carousel.current + direction
                 setItem()
                 return;
+                // counter = amount - 1; 
             }
             
             if (direction == -1 && carousel.current !== 0) { 
@@ -53,7 +54,6 @@ class Carousel {
 
 let carousel = document.querySelector('.carousel');
 new Carousel(carousel);
-
 /* If You've gotten this far, you're on your own! Although we will give you some hints:
     1. You will need to grab a reference to the carousel, and in it grab the left and right buttons
     2. You will need to grab a reference to all of the images
@@ -62,3 +62,27 @@ new Carousel(carousel);
     5. Think of how you would animate this compoennt. Make the cards slide in and out, or fade. It's up to you!
     6. Have fun!
 */
+
+
+
+function collapse() {
+    let coll = document.querySelector(".collapsible");
+    coll.classList.toggle("active");
+    var content = document.querySelector('.carousel')
+    if (content.style.display === "none") {
+        content.style.display = "flex";
+        document.querySelector(".fas").classList = "fas fa-angle-up";
+        document.querySelector(".carousel-container").style.height = "600px";
+    } else {
+        content.style.display = "none";
+        document.querySelector(".fas").classList = "fas fa-angle-down";
+        document.querySelector(".carousel-container").style.height = "3.5rem";
+
+    }
+}
+document.querySelector(".collapsible").addEventListener("click", collapse);
+
+
+
+
+
