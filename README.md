@@ -32,17 +32,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
     
-    Document Object Model
+    Document Object Model -- A standard for manipulating HTML elements.  All HTML elements are objects.  Each elements properties can be added, removed, or changed using the DOM.  Also, you can use methods to access each element and dictate how elements behave when a certain event happens.
 
 2. What is an event?
 
-
+    Actions triggered by a user or browser.  Example, a mouse click, hovering over an element, scrolling, etc...
 
 3. What is an event listener?
 
+    A JS function that is run in response to a certain event firing.  Example, a JS function is called when a user clicks on a modal button.
+
 4. Why would we convert a NodeList into an Array?
 
+    Access to array methods.
+
 5. What is a component?
+
+    Reusable pieces of code used to build elements sharing functionality and styling. 
 
 ### Git Set up
 
