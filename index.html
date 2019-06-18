@@ -8,7 +8,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="./components/Tabs/Tabs.js" async></script>
-  <!-- <script src="./components/Carousel/Carousel.js" async></script> -->
+  <script src="./components/Carousel/Carousel.js" async></script>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 </head>
 
 <body>
@@ -50,19 +51,73 @@
 
   <!-- STRETCH GOAL: ONLY UNCOMMENT THIS WHEN YOU ARE FINISHED WITH THE MAIN OBJECTIVE -->
   <!-- CAROUSEL COMPONENT -->
-  <!-- <div class="carousel">
-    <div class="left-button"><</div>
-    <img src="./assets/carousel/mountains.jpeg" />
-    <img src="./assets/carousel/computer.jpeg" />
-    <img src="./assets/carousel/trees.jpeg" />
-    <img src="./assets/carousel/turntable.jpeg" />
-    <div class="right-button">></div>
-  </div> -->
+  
+<div class='carousel-container'>
+    <div class="collapsible active"><i class='fas fa-angle-up' style='font-size:36px'></i></div>
+    <div class="carousel">
+      <div class="left-button"><</div>
+      <img src="./assets/carousel/mountains.jpeg" />
+      <img src="./assets/carousel/computer.jpeg" />
+      <img src="./assets/carousel/trees.jpeg" />
+      <img src="./assets/carousel/turntable.jpeg" />
+      <div class="right-button">></div>
+    </div>
+  </div>
 
   <!-- CARDS COMPONENT -->
   <div class="cards-container">
 
     <!-- CARD COMPONENTS -->
+    <div class="card" data-tab="javascript">
+      <div class="headline">The Most Incredible Article About Javascript You'll Ever Read</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/fido.jpg" />
+        </div>
+        <span>By WOOFY MCWOOFINGTON</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="node">
+      <div class="headline">Why Everything You Know About Node.Js Is A Lie</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/fido.jpg" />
+        </div>
+        <span>By A. BIG DOGGER</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="bootstrap">
+      <div class="headline">Bootstrap Once, Bootstrap Twice: 5 Reasons Why You Shouldn't Bootstrap The Third Time</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/fido.jpg" />
+        </div>
+        <span>By D. HUNGRY PUPPINGTON</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="jquery">
+      <div class="headline">You Won't Believe What One Politician Just Said About jQuery</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/fido.jpg" />
+        </div>
+        <span>By JOHN H. SLEEPY GUY</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="technology">
+      <div class="headline"> Can these 12 Unbelievable Tech Tips From Mark Zuckerberg make you a millionaire?</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/max.jpg" />
+        </div>
+        <span>By GREY HOUND</span>
+      </div>
+    </div>
+
     <div class="card" data-tab="javascript">
       <div class="headline">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
       <div class="author">
